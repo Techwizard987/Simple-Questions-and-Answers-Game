@@ -1,0 +1,60 @@
+# simple game in python
+
+print('Hi welcome to Manav Quiz!')
+print('Try to get as many questions as correct as possible..')
+
+totalQuestions = 4
+score = 0 
+
+ans = input('1. What is favourite football team?')
+
+if ans.lower() == 'manchester united' or 'chelsea' or 'arsenal' or 'tottenham':
+    print('correct!')
+    score += 1
+else:
+    print('Incorrect!')
+     
+        
+ans = input('2. What is my age? ')
+
+if ans == "29":
+    print('Correct!')
+    score += 1
+else:
+    print('Incorrect')
+    
+    
+    
+ans = input('3. What is my favourite game?')
+
+if ans.lower() == 'FIFA':
+    print('correct!')
+    score += 1
+else:
+    print('Incorrect')
+
+    
+ans = input('4. What is favourite Dog Name?')
+
+if ans.lower() == 'lalchi':
+    print('correct!')
+    score += 1
+else:
+    print('Incorrect')
+     
+ans = input('5. What is favourite Food?')
+
+if ans.lower() == 'Chicken Breast':
+    print('correct!')
+    score += 1
+else:
+    print('Incorrect')
+     
+print("Thank you for playing, you got" +  str(score) + 'questions correct')
+percent = (score/totalQuestions) * 100
+print("Mark: " + str(int(percent)) + '%')
+
+if percent >=50:
+    print('Nice! you passed!')
+else:
+    print('Better Luck Next Time')
